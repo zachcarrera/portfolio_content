@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <style>
+            div img {
+                height: 20px;
+                vertical-align: bottom;
+            }
+            #social {
+                height: 80px;
+            }
+            #profile {
+                height: 120px;
+            }
+            #message-label {
+                vertical-align: top;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            th,
+            td {
+                border: 2px solid black;
+                padding: 3px;
+            }
+            th {
+                border-top: 0px;
+            }
+
+            td {
+                border-bottom: 0px;
+            }
+            th:first-child,
+            td:first-child {
+                border-left: 0px;
+            }
+            th:last-child,
+            td:last-child {
+                border-right: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Zach Carrera</h1>
+        <img
+            src="imgs/profile_picture.png"
+            alt="Profile Picture"
+            id="profile"
+        />
+
+        <br />
+        <br />
+        <div>
+            <img src="imgs/github.png" alt="github logo" />
+            <a href="https://github.com/zachcarrera">my github</a>
+            <img src="imgs/linkedin.png" alt="linkedin logo" />
+            <a href="https://linkedin.com">my linkedin</a>
+            <img src="imgs/email.png" alt="email picture" />
+            <a href="mailto:zachcarrera@gmail.com">my email</a>
+        </div>
+
+        <h2>Technologies</h2>
+
+        <table>
+            <tr>
+                <th>Front-End</th>
+                <th>Python</th>
+                <th>JavaScript</th>
+                <th>Database</th>
+                <th>Concepts</th>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td>Django</td>
+                <td>Express</td>
+                <td>MySQL</td>
+                <td>AJAX</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>Flask</td>
+                <td>Mongoose</td>
+                <td>MongoDB</td>
+                <td>OOP</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td>Unittest</td>
+                <td>React</td>
+                <td></td>
+                <td>REST</td>
+            </tr>
+        </table>
+
+        <h2>Social Snakes</h2>
+        <img src="imgs/html_icon.png" alt="closing tag picture" id="social" />
+
+        <p>
+            Social Media App made in Python -
+            <a href="https://github.com/zachcarrera">code</a> |
+            <a href="https://google.com">deployed</a>
+        </p>
+
+        <h2>Contact Me</h2>
+        <form action="/contact">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" />
+            <br />
+            <br />
+            <div>
+                <label for="message" id="message-label">Message: </label>
+                <textarea
+                    name="message"
+                    id="message"
+                    cols="30"
+                    rows="4"
+                ></textarea>
+            </div>
+            <br />
+            <input type="submit" value="Send Message" />
+        </form>
+    </body>
+</html>
